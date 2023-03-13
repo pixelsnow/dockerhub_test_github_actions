@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/dockerhub_test
+    ports:
+      - 3010:3000
+    image: app:dockerhub_test
+    container_name: dockerhub_test
+    command: npm start
