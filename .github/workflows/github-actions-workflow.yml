@@ -6,16 +6,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v3
         with:
           persist-credentials: false
 
-      - name: Install 🔧
+      - name: Install
         run: npm install
 
-      - name: Build 🏗️
+      - name: Build
         run: npm run build
 
-      - name: Test 🚨
+      - name: Test
         run: npm test
